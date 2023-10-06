@@ -6,6 +6,7 @@ import Header from '~/components/Header'
 import ThemeContextProvider from '~/contexts/ThemeContext'
 import './globals.css'
 import ActiveSectionContextProvider from '~/contexts/ActiveSectionContext'
+import Footer from '~/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <Footer />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>

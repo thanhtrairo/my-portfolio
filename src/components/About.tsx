@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import SectionHeading from './SectionHeading'
 import { useSectionInView } from '~/lib/hooks'
 
-export default function About() {
+const About = () => {
   const { ref } = useSectionInView('About')
 
   return (
@@ -38,3 +38,5 @@ export default function About() {
     </motion.section>
   )
 }
+
+export default About

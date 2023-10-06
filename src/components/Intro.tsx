@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 import { useSectionInView } from '~/lib/hooks'
 import { useActiveSectionContext } from '~/contexts/ActiveSectionContext'
 
-export default function Intro() {
+const Intro = () => {
   const { ref } = useSectionInView('Home', 0.5)
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
@@ -93,3 +93,5 @@ export default function Intro() {
     </section>
   )
 }
+
+export default Intro

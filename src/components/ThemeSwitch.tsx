@@ -5,7 +5,7 @@ import { BsMoon, BsSun } from 'react-icons/bs'
 
 import { useThemeContext, THEME } from '~/contexts/ThemeContext'
 
-export default function ThemeSwitch() {
+const ThemeSwitch = () => {
   const { theme, toggleTheme } = useThemeContext()
 
   return (
@@ -17,3 +17,5 @@ export default function ThemeSwitch() {
     </button>
   )
 }
+
+export default ThemeSwitch

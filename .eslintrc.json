@@ -23,7 +23,6 @@
         "endOfLine": "auto"
       }
     ],
-    "prefer-const": "error",
-    "@typescript-eslint/no-unused-vars": "off"
+    "prefer-const": "error"
   }
 }

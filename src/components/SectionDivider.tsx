@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-export default function SectionDivider() {
+const SectionDivider = () => {
   return (
     <motion.div
       className="my-24 hidden h-16 w-1 rounded-full bg-gray-200 dark:bg-opacity-20 sm:block"
@@ -13,3 +13,5 @@ export default function SectionDivider() {
     ></motion.div>
   )
 }
+
+export default SectionDivider
