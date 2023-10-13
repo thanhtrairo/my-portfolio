@@ -18,7 +18,7 @@ const Intro = () => {
     setActiveSection('Contact')
     setTimeOfLastClick(Date.now())
   }
-
+  console.count('Intro-')
   return (
     <section ref={ref} id="home" className="mb-28 max-w-[50rem] scroll-mt-[100rem] text-center sm:mb-0">
       <div className="flex items-center justify-center">
