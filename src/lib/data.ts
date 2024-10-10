@@ -1,6 +1,4 @@
-import corpcommentImg from 'public/corpcomment.png'
-import rmtdevImg from 'public/rmtdev.png'
-import wordanalyticsImg from 'public/wordanalytics.png'
+import movieImg from 'public/movie.png'
 
 const links = [
   {
@@ -31,75 +29,72 @@ const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
-    description: 'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-    icon: '',
-    date: '2019',
+    description: 'The company providing service to buy courses on website.',
+    relatedTechnologies: ['JavaScript', 'Typescript', 'ReactJS', 'NextJS', 'Tailwind CSS'],
+    project: 'Laan Academy',
+    task: 'System design, UI design, Full coding for frontend and backend',
+    responsibility:
+      'I have learned everything that is needed to complete the work, discuss with the customers to clarify the problems, suggest solutions, design the system. As well as pay attention to coding style',
   },
   {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
-    description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-    icon: '',
-    date: '2019 - 2021',
+    description: ' We provide medical record storage solutions for hospitals.',
+    project: 'EZHospital',
+    task: 'UI design, full coding for frontend',
+    relatedTechnologies: ['JavaScript', 'Typescript', 'ReactJS', ' Material UI'],
+    responsibility:
+      ' I response for implementing the features that satisfy the requirements of the app and discussing with the backend team to clarify the problems, suggest solutions. As well as pay attention to coding style',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: '',
-    date: '2021 - present',
+    description: 'Provide internal personnel records storage for the company.',
+    project: 'EZHcm',
+    task: 'UI design, Full coding for frontend',
+    relatedTechnologies: ['JavaScript', 'Typescript', 'ReactJS', 'Material UI'],
+    responsibility:
+      ' I response for implementing the features that satisfy the requirements of the app and discussing with the backend team to clarify the problems, suggest solutions. As well as pay attention to coding style',
+  },
+  {
+    description: 'Provide website introduction for customers.',
+    project: 'Thenu',
+    task: 'UI design, Full coding for frontend, send email contact',
+    relatedTechnologies: ['JavaScript', 'Typescript', 'ReactJS', 'NextJS', 'Tailwind CSS'],
+    responsibility: 'I discussing with the customers to clarify the problems, suggest solutions',
+  },
+  {
+    description: 'Provide internal website for company.',
+    project: 'Solutionists',
+    task: 'UI design, Full coding for frontend',
+    relatedTechnologies: ['JavaScript', 'Typescript', 'ReactJS', 'NextJS', 'Tailwind CSS'],
+    responsibility: 'I discussing with the chairman to clarify the problems, suggest solutions',
+  },
+  {
+    description: 'The company offers to book and share shuttle service through cross-platform applications',
+    project: 'NearMe',
+    task: 'Push event third-party, build UI, Create and update feature, fix bug and maintenance',
+    relatedTechnologies: ['JavaScript', 'Typescript', 'ReactJS', 'NextJS', 'GraphQL', 'NodeJS', 'Tailwind CSS'],
+    responsibility:
+      ' I have learned everything that is needed to complete the work, discussing with the customers to clarify the problems, suggest solutions, expand my knowledge breadthwise in web development. As well as pay attention to coding styl',
+  },
+  {
+    description: 'Manage people in and out with camera devices',
+    project: 'Camera',
+    task: 'build UI, fix bug and maintenance',
+    relatedTechnologies: ['JavaScript', 'ReactJS', 'JQuery'],
+    responsibility:
+      'I response for implementing the features that satisfy the requirements of the app with backend and designer team',
   },
 ] as const
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'Movie',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageUrl: corpcommentImg,
-    url: '',
-    release: '',
-  },
-  {
-    title: 'rmtDev',
-    description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-    imageUrl: rmtdevImg,
-    url: '',
-    release: '',
-  },
-  {
-    title: 'Word Analytics',
-    description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageUrl: wordanalyticsImg,
-    url: '',
-    release: '',
+      ' I Display, lookup related information about films, tv series and allow rating films, tv series for logged in users',
+    tags: ['React', 'Next.js', 'Tailwind'],
+    imageUrl: movieImg,
+    url: 'https://movie-nextjs-six.vercel.app/',
   },
 ] as const
 
-const skillsData = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Redux',
-  'Recoil',
-  'Node.js',
-  'Tailwind',
-  'SQL',
-  'GraphQL',
-  'Express',
-  'Git',
-] as const
+const skillsData = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Git'] as const
 
 export { links, skillsData }

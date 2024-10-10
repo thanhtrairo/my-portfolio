@@ -41,8 +41,7 @@ const Experience = () => {
             className="mb-10 ml-4 rounded-lg border border-black/5 bg-gray-100 p-4 hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20"
           >
             <div className="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-sm text-gray-700 dark:text-white/70">{experience.date}</time>
-            {/* <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{experience.project}</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{experience.project}</h3>
             <p className="experienceText">
               <span className="font-semibold">Description:</span>
               {` `} {experience.description}
@@ -64,7 +63,7 @@ const Experience = () => {
                   {technologie}
                 </li>
               ))}
-            </ul> */}
+            </ul>
           </motion.li>
         ))}
       </ol>

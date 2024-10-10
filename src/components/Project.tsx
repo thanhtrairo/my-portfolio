@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { ProjectProps } from '~/lib/types'
 
 const Project = (props: ProjectProps) => {
-  const { description, imageUrl, tags, title, url, release } = props
+  const { description, imageUrl, tags, title, url } = props
 
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -31,10 +31,7 @@ const Project = (props: ProjectProps) => {
         >
           <section className="relative overflow-hidden rounded-lg border border-black/5 bg-gray-100 transition hover:bg-gray-200 dark:bg-white/10 dark:text-white dark:hover:bg-white/20 sm:h-[20rem] sm:pr-8 sm:group-even:pl-8">
             <div className="flex h-full flex-col px-5 pb-7 pt-4 sm:max-w-[50%] sm:pl-10 sm:pr-2 sm:pt-10 sm:group-even:ml-[18rem]">
-              <h3 className="text-2xl font-semibold">
-                {title}
-                <time className="text-sm font-normal text-gray-700 dark:text-white/70">{` (${release})`}</time>
-              </h3>
+              <h3 className="text-2xl font-semibold">{title}</h3>
               <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">{description}</p>
               <ul className="mt-4 flex flex-wrap gap-2 sm:mt-auto">
                 {tags.map((tag, index) => (

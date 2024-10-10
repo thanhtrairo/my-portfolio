@@ -68,7 +68,7 @@ const Intro = () => {
 
         <a
           className="borderBlack group flex cursor-pointer items-center gap-2 rounded-full bg-white px-7 py-3 outline-none transition hover:scale-110 focus:scale-110 active:scale-105 dark:bg-white/10"
-          href="/CV.pdf"
+          href="/NguyenTienThanh_FontEnd.pdf"
           download
         >
           Download CV <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
@@ -76,7 +76,7 @@ const Intro = () => {
 
         <a
           className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/nguy%E1%BB%85n-ti%E1%BA%BFn-th%C3%A0nh-a66287266/"
           target="_blank"
         >
           <BsLinkedin />
@@ -84,7 +84,7 @@ const Intro = () => {
 
         <a
           className="borderBlack flex cursor-pointer items-center gap-2 rounded-full bg-white p-4 text-[1.35rem] text-gray-700 transition hover:scale-[1.15] hover:text-gray-950 focus:scale-[1.15] active:scale-105 dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
+          href="https://github.com/thanhtrairo"
           target="_blank"
         >
           <FaGithubSquare />
