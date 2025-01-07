@@ -1,9 +1,14 @@
 import movieImg from 'public/movie.png'
+import blogImg from 'public/blog.png'
 
 const links = [
   {
     name: 'Home',
     hash: '#home',
+  },
+  {
+    name: 'Contact',
+    hash: '#contact',
   },
   {
     name: 'About',
@@ -14,16 +19,12 @@ const links = [
     hash: '#projects',
   },
   {
-    name: 'Skills',
-    hash: '#skills',
-  },
-  {
     name: 'Experience',
     hash: '#experience',
   },
   {
-    name: 'Contact',
-    hash: '#contact',
+    name: 'Skills',
+    hash: '#skills',
   },
 ] as const
 
@@ -86,6 +87,13 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: 'Blogs',
+    description: ' My IT blog is a place to share knowledge, experience and latest updates on information technology.',
+    tags: ['React', 'Next.js', 'Tailwind', 'Mongodb'],
+    imageUrl: blogImg,
+    url: 'https://thanhtrairo.io.vn/',
+  },
+  {
     title: 'Movie',
     description:
       ' I Display, lookup related information about films, tv series and allow rating films, tv series for logged in users',
@@ -95,6 +103,17 @@ export const projectsData = [
   },
 ] as const
 
-const skillsData = ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Git'] as const
+const skillsData = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Next.js',
+  'Node.js',
+  'Git',
+  'Docker',
+  'Nginx',
+] as const
 
 export { links, skillsData }

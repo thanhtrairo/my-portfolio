@@ -9,6 +9,7 @@ import { motion } from 'framer-motion'
 
 import { useSectionInView } from '~/lib/hooks'
 import { useActiveSectionContext } from '~/contexts/ActiveSectionContext'
+import { calculateYearsOfExperience } from '~/lib/helpers'
 
 const Intro = () => {
   const { ref } = useSectionInView('Home', 0.5)
@@ -45,9 +46,9 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I am Nguyen Tien Thanh.</span> I am a{' '}
-        <span className="font-bold">frontend developer</span> with <span className="font-bold">2 years</span> of
-        experience. I enjoy building <span className="italic">sites & apps</span>. My focus is{' '}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">frontend developer</span> with{' '}
+        <span className="font-bold">{calculateYearsOfExperience()}</span> of experience. I enjoy building{' '}
+        <span className="italic">sites & apps</span>. My focus is <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
       <motion.div

@@ -25,7 +25,7 @@ const Experience = () => {
   }
 
   return (
-    <section id="experience" ref={ref} className="mb-28 scroll-mt-28 sm:mb-40">
+    <section id="experience" ref={ref} className="mb-28 max-w-[65rem] scroll-mt-28 sm:mb-40">
       <SectionHeading>My experience</SectionHeading>
       <ol className="relative border-l border-gray-200 dark:border-gray-700">
         {experiencesData.map((experience, index) => (

@@ -7,12 +7,15 @@ import ThemeContextProvider from '~/contexts/ThemeContext'
 import './globals.css'
 import ActiveSectionContextProvider from '~/contexts/ActiveSectionContext'
 import Footer from '~/components/Footer'
+import { calculateYearsOfExperience } from '~/lib/helpers'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'NTT | Personal Portfolio',
-  description: "I'm frontend developer with 2 years of experience",
+export function generateMetadata(): Metadata {
+  return {
+    title: 'NTT | Personal Portfolio',
+    description: `I'm frontend developer with ${calculateYearsOfExperience()} of experience`,
+  }
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
